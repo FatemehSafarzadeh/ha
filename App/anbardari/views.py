@@ -18,7 +18,7 @@ class shop(APIView):
         queriset = Product.objects.all()
         serializer = ProductSerializers(queriset, many=True)
 
-        return Response({"data1": serializer1.data}, status=status.HTTP_200_OK)
+        return Response({"data1": serializer.data}, status=status.HTTP_200_OK)
 
     def post(self, request):
         serializer = ProductSerializers(data=request.data)
