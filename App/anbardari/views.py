@@ -44,7 +44,7 @@ class shop(APIView):
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request):
-        data = request.
+        data = request.DELETE
         product = Product.objects.get(pk=data['id'])
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
