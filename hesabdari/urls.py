@@ -23,3 +23,4 @@ urlpatterns = [
     path('api/', include("App.anbardari.urls")),
 
 ]
+
